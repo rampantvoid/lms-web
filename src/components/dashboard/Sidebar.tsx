@@ -1,7 +1,6 @@
-import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import MenuItem from "./MenuItem";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Sidebar = () => {
   const location = useLocation();

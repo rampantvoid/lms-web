@@ -1,31 +1,11 @@
-import React, { ReactEventHandler, useState } from "react";
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
-import {
-  Command,
-  CommandDialog,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-  CommandSeparator,
-  CommandShortcut,
-} from "@/components/ui/command";
+import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
+import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 import { Input } from "./ui/input";
 
 const Navbar = () => {
-  const isAuth = false;
+  // const isAuth = false;
   const [searchText, setSearchText] = useState("");
 
   const onTyping = (e: React.FormEvent<HTMLInputElement>) => {

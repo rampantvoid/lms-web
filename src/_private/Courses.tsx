@@ -1,15 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
-import React from "react";
-
 const Courses = () => {
   return (
     <div className="flex flex-col w-full h-full">
       <p className="text-2xl font-bold tracking-tight">Your Courses</p>
       <ScrollArea className="rounded-lg shadow-inner flex justify-center w-full bg-gray-400 ">
         <div className="grid lg:grid-cols-3 xl:grid-cols-6 gap-8 p-10 scroll-w-0 ">
-          {Array.from({ length: 51 }).map((_, index) => (
+          {Array.from({ length: 51 }).map((_) => (
             <Card className="transition hover:shadow-lg hover:cursor-pointer basis-1/3 lg:basis-1/6 ">
               <CardContent className="flex flex-col items-center p-0 rounded-md">
                 <div className="w-full h-[250px]">

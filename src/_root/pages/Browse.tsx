@@ -1,11 +1,10 @@
 import Pagination from "@/components/Pagination";
 import { Card, CardContent } from "@/components/ui/card";
-import React, { useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useState } from "react";
 
 const Browse = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [coursesPerPage, setCoursePerPage] = useState(12);
+  const [coursesPerPage] = useState(12);
 
   const courses = [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
@@ -32,7 +31,7 @@ const Browse = () => {
           <p className="text-2xl font-bold">30K results for "cs"</p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5 p-5 md:p-10 scroll-w-0 ">
-            {currentCourse.map((_, index) => (
+            {currentCourse.map((_) => (
               <Card className="transition hover:shadow-lg hover:cursor-pointer max-w-[300px]">
                 <CardContent className="flex flex-col items-center p-0 rounded-md">
                   <div className="w-full h-[250px]">

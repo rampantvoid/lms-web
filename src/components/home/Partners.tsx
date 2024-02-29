@@ -1,6 +1,3 @@
-import { reverse } from "dns";
-import React, { useEffect, useState } from "react";
-import { Controls, PlayState, ScrollTrigger, Tween } from "react-gsap";
 const Partners = () => {
   return (
     <div className="w-full bg-[#e0e2db] p-6 md:px-20 md:py-10 flex flex-col items-center">
